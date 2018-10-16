@@ -9,3 +9,119 @@
   padding: 0;
   margin: 0;
   } 
+
+a{
+font-family: 'Lato-Medium';
+text-decoration: none;
+color:#fff;
+}
+
+#home{   
+    height:1064px;
+    background-image: url('../img/Header BG.png');    
+    padding: 32px 0;
+}
+/*header nav*/
+#home a{font-size: 16px;}
+
+.header{ 
+    display: grid;
+    grid-template-columns:35vw 39.5vw;     
+    width: 74.5vw;
+    margin:0 auto 24px;
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+    height: 26.5px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin:3px auto;
+}
+
+.menu a:nth-child(1) hr{
+    background: #fff;
+    height: 1px;
+    position: relative;
+    top: 35px;
+}
+
+.header_stick{    
+    width: 75vw;
+    height: 1px;
+    margin:0 12.5vw;
+    background:#2e2f30;    
+}
+
+.header_text{
+    margin:325px auto 340px;
+    text-align: center;}
+
+.header_text h1{
+    color:#fff;
+    font-family: 'Myriad-Pro';    
+    font-size: 4.5em;
+}
+
+.header_text p{
+    color:#fff;
+    font-family: Georgia, Times, serif;
+    font-style: italic;    
+    font-size: 2em;
+    line-height: 1.6em;
+}
+/*login/register*/
+.member div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;   
+    height: 121px; 
+}
+
+.member div.login{    
+    width: 58.5%;  
+    left:0;
+    transform: skew(-13.5deg) translate(-15%);    
+    background: #21424a;
+    z-index: 1;}
+
+.member div.register{
+    width: 52.0%;
+    right: 0;        
+    background: #2fac6c;
+}
+
+.member p{
+    font-family: 'Lato-Medium';
+    text-align: center;
+    color:#fff;
+    font-size: 22px;
+    font-style: normal;
+    line-height: 1.2;
+    z-index: 2;  
+}
+
+.member div.login p {
+    margin-right: -333px;
+    margin-bottom: 6px;
+    transform: skew(13.5deg) translate(15%);
+}
+.member div.register p{
+    margin-left: -166px;
+    margin-bottom: 6px;
+}
+
+@font-face {
+font-family: "Lato-Medium"; 
+src: url("../fonts/Lato-Medium.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+@font-face {
+font-family: "Myriad-Pro"; 
+src: url("../fonts/MyriadPro-bold.otf") format("truetype"); 
+font-style: normal; 
+font-weight: bold; 
+} 
