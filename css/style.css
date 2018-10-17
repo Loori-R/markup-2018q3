@@ -15,22 +15,23 @@ text-decoration: none;
 color:#fff;
 }
 
-#home{   
+header#home{   
     height:1035px;
-    background-image: url('../img/Header BG.png');    
+    background-image: url('../img/Header BG.png');  
     padding: 32px 0 0;
 }
-/*header nav*/
-#home a{font-size: 16px;}
 
-.header{ 
+/*header nav*/
+header#home a{font-size: 16px;}
+
+div.header{ 
     display: grid;
     grid-template-columns:35vw 39.5vw;     
     width: 74.5vw;
     margin:0 auto 24px;
 }
 
-.menu{
+nav.menu{
     display: flex;
     width: 100%;
     height: 26.5px;
@@ -39,39 +40,40 @@ color:#fff;
     margin:3px auto;
 }
 
-.menu a:nth-child(1) hr{
+nav.menu a:nth-child(1) hr{
     background: #fff;
     height: 1px;
     position: relative;
     top: 35px;
 }
 
-.header_stick{    
+hr.header-stick{    
     width: 75vw;
     height: 1px;
     margin:0 12.5vw;
     background:#2e2f30;    
 }
 
-.header_text{
+div.header-text{
     margin:325px auto 340px;
     text-align: center;}
 
-.header_text h1{
+div.header-text h1{
     color:#fff;
     font-family: 'Myriad-Pro';    
     font-size: 4.5em;
 }
 
-.header_text p{
+div.header-text p{
     color:#fff;
     font-family: Georgia, Times, serif;
     font-style: italic;    
     font-size: 2em;
     line-height: 1.6em;
 }
+
 /*login/register*/
-.member div{
+div.member div{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,20 +81,20 @@ color:#fff;
     height: 121px; 
 }
 
-.member div.login{    
+div.member div.login{    
     width: 58.5%;  
     left:0;
     transform: skew(-13.5deg) translate(-15%);    
     background: #21424a;
     z-index: 1;}
 
-.member div.register{
+div.member div.register{
     width: 52.0%;
     right: 0;        
     background: #2fac6c;
 }
 
-.member p{
+div.member p{
     font-family: 'Lato-Medium';
     text-align: center;
     color:#fff;
@@ -102,18 +104,18 @@ color:#fff;
     z-index: 2;  
 }
 
-.member div.login p {
-    margin-right: -17.3vw;
+div.member div.login p {
+    margin-right: -20.7vw;
     margin-bottom: 6px;
     transform: skew(13.5deg) translate(15%);
 }
-.member div.register p{
-    margin-left: -8.6vw;
+div.member div.register p{
+    margin-left: -10.4vw;
     margin-bottom: 6px;
 }
+
 /*domain*/
 div#domain{
-    height: 578px;
     background: #fff;
 }
 
@@ -123,6 +125,7 @@ div#domain h1{
     font-size: 1.5em;
     text-align: center;
 }
+
 div#domain p{
     font-family: 'Montserrat';
     font-size: 1em;
@@ -132,7 +135,7 @@ div#domain p{
 
 div#domain table{
     width: 55.6vw;
-    margin:0 auto;
+    margin:0 auto 91px;
     border:1px solid;
     text-align: center;
     font-family: 'Lato-Regular';
@@ -145,6 +148,7 @@ div#domain table td{
     height: 93px;
    
 }
+
 div#domain table tr:nth-child(2) td{ 
     position:relative;
 }
@@ -162,6 +166,7 @@ div#domain table tr:nth-child(2) td::after{
     border-bottom:1px solid;
     content:"";
 }
+
 div#domain table tr td:nth-child(n+2)::before{
     position:absolute;
     top: 10%;
@@ -195,9 +200,11 @@ div#domain form input#form-end{
     margin-left: 9px;
     width: 66px;  
 }
+
 div#domain form input#form-start{
     width: 62px;  
 }
+
 div#domain form input#form-mid{
     height: 100%;
     width: 100%;    
@@ -209,6 +216,185 @@ div#domain form input#form-mid{
     font-size: 0.938em;
     color:#868686;
 }
+
+/*packages*/
+div#packages{    
+    width: 100%;
+    height: 730px;
+    background-image: url('../img/PackagesPhoto.png');
+    background-repeat: repeat-x;
+    background-position: top center;
+}
+div#packages div.container-packages{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(255px,auto));
+    grid-gap: 60px;
+    justify-content: space-around;
+    align-items: center;   
+    max-width: 75vw;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    border-bottom: 2px dotted #d8d8d8;
+}
+
+div#packages div.container-packages>div{    
+    width: 255px;
+    height: 565px;
+    margin-top: 100px;
+    padding: 0 29px;
+    box-sizing: border-box;
+    background: #fff;  
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.06);
+}
+
+div#packages div.container-packages>div:nth-child(1){  
+    border-top:5px solid #f9d423;
+    color:#f9d423;
+}
+
+div#packages div.container-packages>div:nth-child(2){
+    border-top:5px solid #7f8c8d;
+     color:#7f8c8d;
+}
+
+div#packages div.container-packages>div:nth-child(3){
+    border-top:5px solid #f85f40;
+     color:#f85f40;
+}
+
+div#packages div.container-packages>div:nth-child(4){
+    border-top:5px solid #1abc9c;
+     color:#1abc9c;
+}
+
+div#packages div.container-packages>div>h1{
+    margin-bottom: 17px;
+    font-family: "Lato-Bold"; 
+    text-align: center;
+    color:#282828;
+}
+
+div#packages div.container-packages>div>hr{
+    height: 1px;
+    background:#dfdfdf;
+}
+
+.table-packages{
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    justify-content: space-between;
+    height: 270px;
+    margin: 15px auto -2px;
+    line-height: 1.2;
+}
+
+div.table-packages div:nth-child(2n){
+    justify-self: end;
+    font-family:'Lato-Semibold';
+    font-size: 1em;
+}
+
+div.table-packages div:nth-child(2n+1){
+    font-family:'Lato-Light';
+    font-size: 1em;
+    color:#b4b4b4;
+}
+
+div.price-packages{
+    display: flex;
+    justify-content: center;
+    margin: 25px auto 5px;
+}
+
+div.price-packages>span:nth-child(1){
+    align-self: center;
+    font-family:'Lato-Heavy';
+    font-size: 1.052em;
+     color:#2c2c2c;
+}
+
+div.price-packages>span:nth-child(2){
+    font-family:'Lato-Bold';
+    font-size: 1.732em;
+    color:#2c2c2c;
+}
+
+div.price-packages>span:nth-child(3){
+    align-self: flex-end;
+    font-family:'Lato-Regular';
+    font-size: 0.813em;
+    color:#8d8d8d;
+}
+
+div#packages div.container-packages > div:nth-child(1) > hr.price-line-packages{
+    width:105px;
+    height:3px;    
+    background: #f9d423;
+    margin: auto;
+}
+
+div#packages div.container-packages > div:nth-child(2) > hr.price-line-packages{
+    width:105px;
+    height:3px;    
+    background: #7f8c8d;
+    margin: auto;
+}
+
+div#packages div.container-packages > div:nth-child(3) > hr.price-line-packages{
+    width:105px;
+    height:3px;    
+    background: #f85f40;
+    margin: auto;
+}
+
+div#packages div.container-packages > div:nth-child(4) > hr.price-line-packages{
+    width:105px;
+    height:3px;    
+    background: #1abc9c;
+    margin: auto;
+}
+
+span.select-plan{
+    display: flex;
+    justify-content: center;
+    margin-top:14px;
+    font-family: "Lato-Bold";
+    font-size: 0.998em;
+    color:#282828;
+    cursor: pointer;
+}
+/*circle*/
+div#packages div.container-packages>div svg{margin: 35px 65px 9px;}
+
+svg.progress-circle.indefinite circle.progress1 {
+  stroke: #f9d423;
+  stroke-width: 6;
+  stroke-dashoffset: 0;
+ stroke-dasharray: 40 188;
+}
+
+svg.progress-circle.indefinite circle.progress2 {
+  stroke: #7f8c8d;
+  stroke-width: 6;
+  stroke-dashoffset: 0;
+ stroke-dasharray: 80 188;
+}
+
+svg.progress-circle.indefinite circle.progress3 {
+  stroke: #f85f40;
+  stroke-width: 6;
+  stroke-dashoffset: 0;
+ stroke-dasharray: 120 188;
+}
+
+svg.progress-circle.indefinite circle.progress4 {
+  stroke: #1abc9c;
+  stroke-width: 6;
+  stroke-dashoffset: 0;
+ stroke-dasharray: 160 188;
+}
+
+/**/
 @font-face {
 font-family: "Lato-Medium"; 
 src: url("../fonts/Lato-Medium.ttf") format("truetype"); 
@@ -230,6 +416,18 @@ font-weight: normal;
 @font-face {
 font-family: "Lato-Semibold"; 
 src: url("../fonts/Lato-Semibold.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face {
+font-family: "Lato-Light"; 
+src: url("../fonts/Lato-Light.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face {
+font-family: "Lato-Bold"; 
+src: url("../fonts/Lato-Bold.ttf") format("truetype"); 
 font-style: normal; 
 font-weight: normal; 
 }
