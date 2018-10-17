@@ -103,12 +103,12 @@ color:#fff;
 }
 
 .member div.login p {
-    margin-right: -333px;
+    margin-right: -17.3vw;
     margin-bottom: 6px;
     transform: skew(13.5deg) translate(15%);
 }
 .member div.register p{
-    margin-left: -166px;
+    margin-left: -8.6vw;
     margin-bottom: 6px;
 }
 /*domain*/
