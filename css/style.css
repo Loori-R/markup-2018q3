@@ -1,5 +1,4 @@
 * {
-  vertical-align: baseline;
   font-weight: inherit;
   font-family: inherit;
   font-style: inherit;
@@ -17,9 +16,9 @@ color:#fff;
 }
 
 #home{   
-    height:1064px;
+    height:1035px;
     background-image: url('../img/Header BG.png');    
-    padding: 32px 0;
+    padding: 32px 0 0;
 }
 /*header nav*/
 #home a{font-size: 16px;}
@@ -112,7 +111,104 @@ color:#fff;
     margin-left: -166px;
     margin-bottom: 6px;
 }
+/*domain*/
+div#domain{
+    height: 578px;
+    background: #fff;
+}
 
+div#domain h1{
+    margin: 83px auto 22px;
+    font-family: 'Lato-Heavy';
+    font-size: 1.5em;
+    text-align: center;
+}
+div#domain p{
+    font-family: 'Montserrat';
+    font-size: 1em;
+    text-align: center;
+    color:#a2a2a2;
+}
+
+div#domain table{
+    width: 55.6vw;
+    margin:0 auto;
+    border:1px solid;
+    text-align: center;
+    font-family: 'Lato-Regular';
+    font-size: 0.875em;
+    color:#cbcbcb;
+}
+
+div#domain table td{    
+    width: 14vw;
+    height: 93px;
+   
+}
+div#domain table tr:nth-child(2) td{ 
+    position:relative;
+}
+
+div#domain table tr td:nth-child(n+2){ 
+ position:relative;
+}
+
+div#domain table tr:nth-child(2) td::after{
+ position:absolute;
+    top:0;
+    left:5.5%;
+    width:90%;
+    text-align: center;
+    border-bottom:1px solid;
+    content:"";
+}
+div#domain table tr td:nth-child(n+2)::before{
+    position:absolute;
+    top: 10%;
+    left: 0;
+    width:1px;
+    height: 85%;
+    text-align: center;
+    border-left:1px solid;
+    content:""; 
+}
+
+div#domain form{
+    display: flex;
+    justify-content: space-between;
+    width: 55.6vw;
+    height: 50px;
+    margin:48px auto 40px;
+    padding: 9px;
+    box-sizing: border-box;
+    border: 1px solid #cbcbcb;
+}
+
+div#domain form input{
+    height: 100%;      
+    font-family: "Lato-Semibold"; 
+    text-align: center;
+    color:#cbcbcb;       
+}
+
+div#domain form input#form-end{
+    margin-left: 9px;
+    width: 66px;  
+}
+div#domain form input#form-start{
+    width: 62px;  
+}
+div#domain form input#form-mid{
+    height: 100%;
+    width: 100%;    
+    padding-left: 15px;   
+    border-right:1px solid #cbcbcb;
+    border-left:1px solid #cbcbcb;
+    font-family: "Lato-Semibold"; 
+    text-align: left;
+    font-size: 0.938em;
+    color:#868686;
+}
 @font-face {
 font-family: "Lato-Medium"; 
 src: url("../fonts/Lato-Medium.ttf") format("truetype"); 
@@ -120,8 +216,32 @@ font-style: normal;
 font-weight: normal; 
 } 
 @font-face {
+font-family: "Lato-Heavy"; 
+src: url("../fonts/Lato-Heavy.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+@font-face {
+font-family: "Lato-Regular"; 
+src: url("../fonts/Lato-Regular.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face {
+font-family: "Lato-Semibold"; 
+src: url("../fonts/Lato-Semibold.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face {
 font-family: "Myriad-Pro"; 
 src: url("../fonts/MyriadPro-bold.otf") format("truetype"); 
 font-style: normal; 
 font-weight: bold; 
+} 
+@font-face {
+font-family: "Montserrat"; 
+src: url("../fonts/Montserrat.otf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
 } 
