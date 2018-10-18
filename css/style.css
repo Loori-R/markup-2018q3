@@ -220,11 +220,12 @@ div#domain form input#form-mid{
 /*packages*/
 div#packages{    
     width: 100%;
-    height: 730px;
     background-image: url('../img/PackagesPhoto.png');
     background-repeat: repeat-x;
-    background-position: top center;
+    background-position: top center;    
+    padding-bottom: 64px;    
 }
+
 div#packages div.container-packages{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(255px,auto));
@@ -233,7 +234,7 @@ div#packages div.container-packages{
     align-items: center;   
     max-width: 75vw;
     margin: 0 auto;
-    padding-bottom: 100px;
+    padding-bottom: 100px;   
     border-bottom: 2px dotted #d8d8d8;
 }
 
@@ -394,7 +395,80 @@ svg.progress-circle.indefinite circle.progress4 {
  stroke-dasharray: 160 188;
 }
 
+/*about*/
+#about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:33px auto 0;
+}
+
+#about>div:nth-child(1){    
+    max-width: 425px;
+    padding-right:93px;
+    box-sizing: content-box;
+    border-right: 2px dotted #d8d8d8;
+}
+
+#about>div>h1{    
+    margin-bottom: 21px;
+    font-family: 'Lato-Semibold';
+    font-size:2.194em;
+    color:#303030;
+}
+
+#about>div>h1>b{
+    font-family: 'Lato-Black';   
+}
+
+#about>div>p{
+    font-family:'Lato-Thin';
+    font-size:  1.129em;
+    color:#747474;
+    line-height: 1.5;
+}
+
+#about>div:nth-child(2){    
+    flex-basis: 606px;
+    display: grid;
+    grid-template-columns: repeat(3,minmax(123px,auto));
+    grid-gap: 78px;
+    margin: 10px 0 0 80px;
+}
+
+div.worker{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+div.worker>span:nth-child(2){
+    font-family:'Lato-Semibold';
+    font-size:1.063em;
+    color:#303030;
+}
+
+div.worker>span:nth-child(3){
+    font-family:'Lato-Regular';
+    font-size:0.938em;
+    color:#8e8e8e;
+}
+
+div.social-worker{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 24px;
+    justify-content: space-between;
+    justify-items: center;
+    width: 90px;    
+    margin: 0 auto;    
+}
+
+div.social-worker a:hover{filter: invert(41%) sepia(15%) saturate(2473%) hue-rotate(155deg) brightness(109%) contrast(87%);}
+
 /**/
+
+footer{height: 300px;}
 @font-face {
 font-family: "Lato-Medium"; 
 src: url("../fonts/Lato-Medium.ttf") format("truetype"); 
@@ -418,6 +492,18 @@ font-family: "Lato-Semibold";
 src: url("../fonts/Lato-Semibold.ttf") format("truetype"); 
 font-style: normal; 
 font-weight: normal; 
+}
+@font-face {
+font-family: "Lato-Thin"; 
+src: url("../fonts/Lato-Thin.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}
+@font-face {
+font-family: "Lato-Black"; 
+src: url("../fonts/Lato-Black.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal;
 }
 @font-face {
 font-family: "Lato-Light"; 
