@@ -24,14 +24,14 @@ header#home{
 /*header nav*/
 header#home a{font-size: 16px;}
 
-div.header{ 
+#home div.header{ 
     display: grid;
     grid-template-columns:35vw 39.5vw;     
     width: 74.5vw;
     margin:0 auto 24px;
 }
 
-nav.menu{
+#home nav.menu{
     display: flex;
     width: 100%;
     height: 26.5px;
@@ -40,7 +40,7 @@ nav.menu{
     margin:3px auto;
 }
 
-nav.menu a:nth-child(1) hr{
+#home nav.menu a:nth-child(1) hr{
     background: #fff;
     height: 1px;
     position: relative;
@@ -544,7 +544,153 @@ div.slider-bot hr{
     background: #979796;
 }
 
-footer{height: 300px;}
+/*functions*/
+div#functions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    flex-wrap: wrap;
+    margin: 97px 12.5vw;
+}
+
+div.container-functions{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    grid-gap:20px;
+    max-width: 225px;
+}
+
+div.bg-fa-func{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+div#functions div.container-functions:nth-child(1) div.bg-fa-func{
+    background: #f1c40f;
+}
+div#functions div.container-functions:nth-child(2) div.bg-fa-func{
+    background: #0faff1;
+}
+div#functions div.container-functions:nth-child(3) div.bg-fa-func{
+    background: #95a5a6;
+}
+div#functions div.container-functions:nth-child(4) div.bg-fa-func{
+    background: #f1540f;
+}
+
+div.container-functions h1{
+    font-family:'Lato-Heavy' ;
+    font-size: 1.125em;
+    color:#303030;
+}
+div.container-functions p{ 
+    font-family:'Lato-Light';
+    font-size: 1em;
+    color:#7e7e7e;
+    line-height: 20px;
+    margin-top: -13px;
+}
+
+footer{
+    height: 300px;
+    background: #2a2a2a;
+    padding: 0 12.5vw;
+    font-family:'Lato-Light';
+    font-size:0.938em;
+    color:#686868;
+}
+
+footer nav.menu{ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    width: 74.5vw;
+    min-height: 73px;
+    margin:0 auto 36px;
+    border-bottom: 1px solid #4a4a4a;
+    font-family:'Lato-Light';
+}
+
+footer div.btn-menu{
+    display: flex;
+    width: 26.875vw;
+    height: 26.5px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 9px;
+    font-family:'Lato-Light';    
+}
+
+footer div.btn-menu a{
+    font-family: 'Lato-Medium';
+    font-size: 0.813em;
+    color:#646464;
+}
+
+footer div.btn-menu a:first-child{color:#fff;}
+
+footer nav.menu div.logo-header a img{
+    filter: invert(60%) sepia(0%) saturate(218%) hue-rotate(181deg) brightness(100%) contrast(86%);
+}
+div.footer-bot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 150px;
+}
+
+div.footer-bot>div:nth-child(1){
+    flex-basis: 297px;
+    line-height: 1.733;
+    padding-right: 83px;
+    border-right: 1px solid #393939;
+}
+
+div.footer-bot>nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 12px 80px;
+    justify-content: space-between;
+    align-content: space-around;
+    min-height: 100px;    
+}
+div.footer-bot>nav a {
+    font-family:'Lato-Light';
+    color:#686868;
+}
+
+div.footer-bot>div.footer-contact{
+    display: grid;
+    grid-gap: 14px;
+    padding-left: 85px;
+    border-left: 1px solid #393939;
+}
+
+div.footer-bot>div.footer-contact a{
+    font-family:'Lato-Light';
+    color:#686868;}
+
+div.footer-contact img{margin-right: 12px}
+
+div.footer-bot>div:nth-child(1)>p:nth-child(2){margin-top: 18px}
+
+div.footer-bot>div>p>a{
+margin-top:24px;
+    font-family:'Lato-Bold';
+    color:#636363;
+}
+div.footer-contact div.phone a{
+    font-family: 'Lato-Semibold';
+}
+/*FONTs*/
 @font-face {
 font-family: "Lato-Medium"; 
 src: url("../fonts/Lato-Medium.ttf") format("truetype"); 
