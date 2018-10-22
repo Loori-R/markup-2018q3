@@ -1,9 +1,13 @@
+//inner text for table packages
 const inner_text = (row, text) => {
     const packages = document.querySelectorAll('div.table-packages div:nth-child(2n+1)');
     for (let i = row - 1; i < packages.length; i += 7) {
         packages[i].innerHTML = text;
     };
 };
+//end inner text for table packages
+
+//slider for comments
 const Slider = () => {
     const slide = document.getElementsByClassName('slide');
     const btnSlide = document.getElementsByClassName('circle');
@@ -22,6 +26,8 @@ const Slider = () => {
         }
     }
 }
+//end slider for comments
+
 inner_text(1, 'Disk Space (GB)');
 inner_text(2, 'Subdomains)');
 inner_text(3, 'Transfer (GB)');
