@@ -28,6 +28,39 @@ const Slider = () => {
 }
 //end slider for comments
 
+// login/register
+const login = document.querySelector('div.member div.login');
+const register = document.querySelector('div.member div.register');
+let count = 0;//click
+
+const OpenForm = (open) => {
+    const oldClass = open.className
+    open.classList.add(oldClass + '-active');
+    open.classList.remove(oldClass);
+    if (count === 0) {
+        count += 1
+        open.classList.add(oldClass + '-active');
+        open.classList.remove(oldClass);
+        open.style.zIndex = '99';
+        const Show_form = () => { document.getElementById('form-' + oldClass).style.display = 'flex' }//form class = form + 'login or register'  
+        setTimeout(Show_form, 980);
+    } else {
+        count -= 1;
+        open.classList.remove(oldClass + '-active');
+        open.classList.add(oldClass.replace(/-active/g, ''));
+        document.getElementById('form-' + oldClass.replace(/-active/g, '')).style.display = 'none';//hide form class = form + 'login/register'
+        open.style.zIndex = '0';
+    }
+    login.style.zIndex = '3'
+}
+login.onclick = () => {
+    OpenForm(login)
+}
+register.onclick = () => {
+    OpenForm(register)
+}
+// end login/register
+
 inner_text(1, 'Disk Space (GB)');
 inner_text(2, 'Subdomains)');
 inner_text(3, 'Transfer (GB)');
