@@ -291,7 +291,7 @@ div#packages{
 
 div#packages div.container-packages{
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(255px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(255px,auto));
     grid-gap: 60px;
     justify-content: space-around;
     align-items: center;   
