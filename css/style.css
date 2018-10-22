@@ -15,13 +15,13 @@ text-decoration: none;
 color:#fff;
 }
 
+/*header*/
 header#home{   
     height:1035px;
     background-image: url('../img/Header BG.png');  
     padding: 32px 0 0;
 }
 
-/*header nav*/
 header#home a{
     font-size: 1em;
     transition: all 300ms linear;
@@ -50,12 +50,6 @@ header#home a{
     top: 35px;
 }
 
-div.logo-header img{transition: all 300ms linear;}
-
-div.logo-header img:hover{
-   transform:rotate(-5deg)
-}
-
 hr.header-stick{    
     width: 75vw;
     height: 1px;
@@ -67,13 +61,13 @@ div.header-text{
     margin:325px auto 340px;
     text-align: center;}
 
-div.header-text h1{
+div.header-text p:nth-child(1){
     color:#fff;
     font-family: 'Myriad-Pro';    
     font-size: 4.5em;
 }
 
-div.header-text p{
+div.header-text p:nth-child(n+2){
     color:#fff;
     font-family: Georgia, Times, serif;
     font-style: italic;    
@@ -81,13 +75,36 @@ div.header-text p{
     line-height: 1.6em;
 }
 
+/*interactive nav*/
+#home nav.menu a:hover hr{
+    background: #fff;
+    height: 1px;
+    position: relative;
+    top: 32px;
+    transition: all 0.3s linear;
+}
+
+#home nav.menu a:hover{
+    font-size: 1.2em;
+    transition: all 0.3s linear;
+}
+
+div.logo-header img:hover{
+   transform:rotate(-5deg);
+   transition: all 300ms linear;
+}
+/*end interactive nav*/
+
+
 /*login/register*/
-div.member div{
+div.member>div{
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;   
-    height: 121px; 
+    min-height: 121px; 
+    transition: all 1s ease-in;
+    cursor: pointer;
 }
 
 div.member div.login{    
@@ -111,6 +128,7 @@ div.member p{
     font-style: normal;
     line-height: 1.2;
     z-index: 2;  
+     transition: all 0.5s ease-in;
 }
 
 div.member div.login p {
@@ -122,6 +140,42 @@ div.member div.register p{
     margin-left: -10.4vw;
     margin-bottom: 6px;
 }
+
+/*interactive login/register*/
+
+div.member div.login-active{    
+    width: 99.1vw;  
+    left:0;   
+    background: #21424a;
+    z-index: 99;}
+
+div.member div.register-active{    
+    width: 99.1vw;  
+    right:0;   
+    background: #2fac6c;
+    z-index: 99;}
+
+form.member-form{
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center;
+    font-family: 'Lato-Heavy';
+    font-size: 1.125em;
+    color: #fff;    
+}
+form#form-login{width: 50%;}
+form#form-register{width: 70%;}
+
+form.member-form button{
+    width: auto;
+    padding: 5px 20px;
+    background: #fff;
+    border-radius: 2px;
+}
+/*end interactive login/register*/    
 
 /*domain*/
 div#domain{
