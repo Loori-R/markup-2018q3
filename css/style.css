@@ -426,6 +426,27 @@ span.select-plan{
     font-size: 0.998em;
     color:#282828;
     cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+span.select-plan:hover{
+   padding: 10px 0px
+}
+
+div.container-packages>div:nth-child(1) span.select-plan:hover{
+    box-shadow: inset 0 0 0 23px #f9d423;
+}
+
+div.container-packages>div:nth-child(2) span.select-plan:hover{
+    box-shadow: inset 0 0 0 23px #7f8c8d;
+}
+
+div.container-packages>div:nth-child(3) span.select-plan:hover{
+    box-shadow: inset 0 0 0 23px #f85f40;
+}
+
+div.container-packages>div:nth-child(4) span.select-plan:hover{
+    box-shadow: inset 0 0 0 23px #1abc9c;
 }
 /*circle*/
 div#packages div.container-packages>div svg{margin: 35px 65px 9px;}
@@ -790,6 +811,11 @@ div.footer-bot>div>p>a:hover{color:#fff;}
 
 div.footer-contact div.phone a{
     font-family: 'Lato-Semibold';
+}
+div.footer-contact div.phone a:hover,
+div.footer-contact div.email a:hover{
+   transition: all 500ms linear;
+   color:#fff;
 }
 
 /*FONTs*/
