@@ -66,4 +66,25 @@ window.onload = () => {
         OpenForm(register)
     }
     // end login/register
+
+    //click on the phone 
+    const Phone = () => {
+        const agent = navigator.userAgent;
+        const isWebkit = (agent.indexOf("AppleWebKit") > 0);
+        const isIOS = (agent.indexOf("iPhone") > 0 || agent.indexOf("iPod") > 0);
+        const isAndroid = (agent.indexOf("Android") > 0);
+        const isNewBlackBerry = (agent.indexOf("AppleWebKit") > 0 && agent.indexOf("BlackBerry") > 0);
+        const isWebOS = (agent.indexOf("webOS") > 0);
+        const isWindowsMobile = (agent.indexOf("IEMobile") > 0);
+        const isMobile = (isIOS || isAndroid || isNewBlackBerry || isWebOS || isWindowsMobile || isWebkit);
+        return isMobile
+    }
+    if (!Phone()) {
+        const phone_link = document.getElementById('telephone')
+        phone_link.onclick = (event) => {
+            event.preventDefault()
+            alert('Sorry, this link only works on mobile devices.')
+        }
+    }
+    //end click on the phone
 }
