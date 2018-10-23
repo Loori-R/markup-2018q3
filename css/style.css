@@ -627,12 +627,17 @@ div.container-functions{
 }
 
 div.bg-fa-func{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 60px;
     height: 60px;
     border-radius: 50%;
+}
+
+div.bg-fa-func a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;    
 }
 
 div#functions div.container-functions:nth-child(1) div.bg-fa-func{
@@ -649,6 +654,11 @@ div#functions div.container-functions:nth-child(3) div.bg-fa-func{
 
 div#functions div.container-functions:nth-child(4) div.bg-fa-func{
     background: #f1540f;
+}
+
+#functions div.container-functions div.bg-fa-func a:hover{
+  transform: rotateZ(360deg);
+  transition: all 0.4s linear;
 }
 
 div.container-functions h1{
