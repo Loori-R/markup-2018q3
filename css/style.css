@@ -36,10 +36,11 @@ header#home a{
 
 #home nav.menu{
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;    
+    flex-wrap: wrap;
     width: 100%;
     height: 26.5px;
-    justify-content: space-between;
-    align-items: flex-start;
     margin:3px auto;
 }
 
@@ -719,10 +720,11 @@ footer nav.menu{
 
 footer div.btn-menu{
     display: flex;
-    width: 26.875vw;
-    height: 26.5px;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
+    width: 26.875vw;
+    height: 26.5px;   
     margin-top: 9px;
     font-family:'Lato-Light';    
 }
