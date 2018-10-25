@@ -6,24 +6,19 @@
     <title>Ghost Host | Main</title>
     <link rel="icon" href="img/favicon.png" type="image/png">
     <link rel="stylesheet" href="css/style.css">
-    <script src='scripts/script.js'></script>
 </head>
 
 <body>
     <header id='home'>
         <div class='header'>
             <div class='logo-header'><a href='index.html'><img src='img/Logo.png' width='133' height='29' alt='logo Ghost Host Domain Hosting'></a></div>
-            <nav class='menu'>
+            <nav class='menu header-nav'>
                 <a href='index.html'>Home
                     <hr></a>
-                <a href='#reg'>
-                    Domain
-                    <hr>
-                </a>
-                <a href='#packages'>
-                    Hosting
-                    <hr>
-                </a>
+                <a href='#reg'>Domain
+                    <hr></a>
+                <a href='#packages'>Hosting
+                    <hr></a>
                 <a href='#about'>Clients
                     <hr></a>
                 <a href='#'>Blog
@@ -41,7 +36,7 @@
         <div id='reg' class='member'>
             <div class='login' title="Click for LOG IN">
                 <p>LOGIN</p>
-                <form id="form-login" class='member-form' onclick=event.stopPropagation()>
+                <form id="form-login" class='member-form log' onclick=event.stopPropagation()>
                     <div>Login <input type="text"></div>
                     <div>Password <input type="password"></div>
                     <button>enter</button>
@@ -49,7 +44,7 @@
             </div>
             <div class='register' title="Click for REGISTER">
                 <p>REGISTER</p>
-                <form id="form-register" class='member-form' onclick=event.stopPropagation()>
+                <form id="form-register" class='member-form reg' onclick=event.stopPropagation()>
                     <div>Login <input type="text"></div>
                     <div>Password <input type="password"></div>
                     <div>Mail <input type="email"></div>
@@ -59,21 +54,22 @@
         </div>
     </header>
     <main>
-        <div id='domain'>
+        <div id='domain' class='domain-block'>
             <h1>Would you like to buy a new domain ?</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor mauris ac nulla interdum, id
                 molestier.</p>
-            <form>
-                <input type="url" name="www" id="form-start" placeholder="www." readonly>
-                <input type="text" name="url" id="form-mid" placeholder="What do you want?" maxlength='63'>
-                <input list="form-domain" id="form-end" placeholder=".com">
+            <form class='check-domain'>
+                <input type="url" name="www" id="form-start" class='domain-form-1' placeholder="www." readonly>
+                <input type="text" name="url" id="form-mid" class='domain-form-2' placeholder="What do you want?"
+                    maxlength='63'>
+                <input list="form-domain" id="form-end" class='domain-form-3' placeholder=".com">
                 <datalist id="form-domain">
                     <option>.com</option>
                     <option>.net</option>
                     <option>.org</option>
                 </datalist>
             </form>
-            <table>
+            <table class='coast-domain'>
                 <tr>
                     <td>.COM</td>
                     <td>1 Year</td>
@@ -88,7 +84,7 @@
                 </tr>
             </table>
         </div>
-        <div id='packages'>
+        <div id='packages' class='packages-block'>
             <div class='container-packages'>
                 <div>
                     <svg class="progress-circle indefinite" width="58" height="58">
@@ -229,7 +225,7 @@
                 </div>
             </div>
         </div>
-        <div id='about'>
+        <div id='about' class='about-block'>
             <div>
                 <h1><b>About</b> Us</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -271,7 +267,7 @@
                 </div>
             </div>
         </div>
-        <div id='comments'>
+        <div id='comments' class='comments-block'>
             <div class='slider'>
                 <div class='slide'>“Suspendisse tempor turpis odio, sit amet cursus leo consequat non. Maecenas
                     lacinia
@@ -300,7 +296,7 @@
                 </div>
             </div>
         </div>
-        <div id='functions'>
+        <div id='functions' class='functions-block'>
             <div class='container-functions'>
                 <div class='bg-fa-func'><a href='#'><img src='img/fa-flash.png' width="14" height="27" alt='icon flash'></a></div>
                 <h1>Fast Servers</h1>
@@ -329,9 +325,9 @@
     </main>
     <footer>
         <nav class='menu'>
-            <div class='logo-header'>
+            <div class='logo-header logo-footer'>
                 <a href='index.html'>
-                    <img src='img/Logo.png' width='133' height='29' alt='logo Ghost Host'>
+                    <img src='img/Logo.png' width='133' height='29' alt='logo Ghost Host buy domain hosting'>
                 </a>
             </div>
             <div class='btn-menu'>
@@ -375,6 +371,7 @@
             </div>
         </div>
     </footer>
+    <script src='scripts/script.js'></script>
 </body>
 
 </html>
