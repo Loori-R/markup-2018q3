@@ -187,18 +187,18 @@ form.member-form button {
 
 /*domain*/
 
-div.domain-block {
+section.domain-block {
     background: #fff;
 }
 
-div.domain-block h1 {
+section.domain-block h1 {
     margin: 83px auto 22px;
     font-family: 'Lato-Heavy', 'Futura', sans-serif;
     font-size: 1.5em;
     text-align: center;
 }
 
-div.domain-block p {
+section.domain-block p {
     font-family: 'Montserrat';
     font-size: 1em;
     text-align: center;
@@ -249,7 +249,7 @@ table.coast-domain td:nth-child(n+2)::before {
     content: "";
 }
 
-div.domain-block form {
+section.domain-block form {
     display: flex;
     justify-content: space-between;
     width: 55.6vw;
@@ -290,7 +290,7 @@ form.check-domain input.domain-form-2 {
 
 /*packages*/
 
-div.packages-block {
+section.packages-block {
     width: 100%;
     padding-bottom: 64px;
     background-image: url('../img/PackagesPhoto.png');
@@ -491,39 +491,39 @@ svg.progress-circle.indefinite circle.progress4 {
 
 /*about*/
 
-div.about-block {
+section.about-block {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 33px auto 0;
 }
 
-div.about-block>div:nth-child(1) {
+section.about-block>div:nth-child(1) {
     max-width: 425px;
     padding-right: 93px;
     box-sizing: content-box;
     border-right: 2px dotted #d8d8d8;
 }
 
-div.about-block h1 {
+section.about-block h1 {
     margin-bottom: 21px;
     font-family: 'Lato-Semibold', 'Futura', sans-serif;
     font-size: 2.194em;
     color: #303030;
 }
 
-div.about-block b {
+section.about-block b {
     font-family: 'Lato-Black', 'Futura', sans-serif;
 }
 
-div.about-block p {
+section.about-block p {
     font-family: 'Lato-Thin', 'Futura', sans-serif;
     font-size: 1.129em;
     line-height: 1.5;
     color: #747474;
 }
 
-div.about-block>div:nth-child(2) {
+section.about-block>div:nth-child(2) {
     flex-basis: 606px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(123px, auto));
@@ -567,7 +567,7 @@ div.social-worker a:hover {
 
 /*comments*/
 
-div.comments-block {
+section.comments-block {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-gap: 13px;
@@ -650,7 +650,7 @@ div.slider-bot hr {
 
 /*functions*/
 
-div.functions-block {
+section.functions-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
