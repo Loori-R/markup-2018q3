@@ -17,7 +17,7 @@ window.onload = () => {
 
     //slider for comments
     const slide = document.getElementsByClassName('slide');
-    const btnSlide = document.getElementsByClassName('circle');
+    const btnSlide = document.getElementsByClassName('btn-slider');
     const author = document.getElementsByClassName('name');
     for (let i = 0; i < btnSlide.length; i++) {
         btnSlide[i].onclick = () => {

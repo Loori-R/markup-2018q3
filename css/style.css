@@ -505,7 +505,7 @@ section.about-block>div:nth-child(1) {
     border-right: 2px dotted #d8d8d8;
 }
 
-section.about-block h1 {
+section.about-block h3 {
     margin-bottom: 21px;
     font-family: 'Lato-Semibold', 'Futura', sans-serif;
     font-size: 2.194em;
@@ -601,14 +601,14 @@ div.slider div.slide {
     animation-timing-function: cubic-bezier(1, 0, 0, .5)
 }
 
-div.slider-bot {
+div.slider-author {
     display: flex;
     align-items: center;
     height: 28px;
     font-family: 'Lato-Bold', 'Futura', sans-serif;
 }
 
-div.circle {
+div.btn-slider {
     width: 6px;
     height: 6px;
     background: none;
@@ -618,11 +618,11 @@ div.circle {
     transition: all 0.3s linear;
 }
 
-div.circle:first-child {
+div.btn-slider:first-child {
     background: #fff;
 }
 
-div.container-circle {
+div.container-btn-slider {
     display: grid;
     grid-template-columns: repeat(3, 20px);
     justify-items: center;
@@ -638,11 +638,11 @@ div.name:not(:first-child) {
     display: none;
 }
 
-div.container-circle {
+div.container-brn-slider {
     margin-left: 6px;
 }
 
-div.slider-bot hr {
+div.slider-author hr {
     width: 1px;
     height: 16px;
     background: #979796;
@@ -703,7 +703,7 @@ div.container-functions div.bg-fa-func a:hover {
     transition: all 0.4s linear;
 }
 
-div.container-functions h1 {
+div.container-functions h2 {
     font-family: 'Lato-Heavy', 'Futura', sans-serif;
     font-size: 1.125em;
     color: #303030;
@@ -728,7 +728,7 @@ footer {
     background: #2a2a2a;
 }
 
-footer nav.menu {
+nav.menu.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -739,7 +739,7 @@ footer nav.menu {
     border-bottom: 1px solid #4a4a4a;
 }
 
-div.btn-menu {
+div.link-menu {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -750,19 +750,19 @@ div.btn-menu {
     font-family: 'Lato-Light', 'Futura', sans-serif;
 }
 
-div.btn-menu a {
+div.link-menu a {
     font-family: 'Lato-Medium', 'Futura', sans-serif;
     font-size: 0.813em;
     color: #646464;
     transition: all 300ms linear;
 }
 
-div.btn-menu a:hover {
+div.link-menu a:hover {
     font-size: 0.9em;
     color: #fff;
 }
 
-div.btn-menu a:first-child {
+div.link-menu a:first-child {
     color: #fff;
 }
 
